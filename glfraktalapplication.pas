@@ -15,7 +15,7 @@ type
   private
     robot: TRobot;
     time: Integer;
-    procedure JBMNT(dlzka: real; uroven, uhol: integer);
+    procedure Fraktal(dlzka: real; uroven, uhol: integer);
   public
     constructor Create();
     procedure Render; override;
@@ -24,7 +24,7 @@ type
 
 implementation
 
-procedure TFraktalApplication.JBMNT(dlzka: real; uroven, uhol: integer);
+procedure TFraktalApplication.Fraktal(dlzka: real; uroven, uhol: integer);
 var
   i: integer;
 begin
@@ -37,7 +37,7 @@ begin
       if uroven > 0 then
       begin
         Lt(uhol);
-        JBMNT(dlzka / 2, uroven - 1, uhol);
+        Fraktal(dlzka / 2, uroven - 1, uhol);
         Rt(uhol);
       end;
       Rt(90);
@@ -60,7 +60,7 @@ begin
   with Robot do
   begin
     beginDrawing();
-    JBMNT(300, 7, time);
+    Fraktal(300, 7, time);
 
     endDrawing();
   end;
