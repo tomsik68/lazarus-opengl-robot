@@ -7,7 +7,7 @@ const
   // these numbers make your app work, so do respect them!
   WIDTH = 1920;
   HEIGHT = 1080;
-  TIMER_INTERVAL = 24;
+  TIMER_INTERVAL = 32;
 {$REGION 'OpenGL Magic'}
 var
   Cmd: array of PChar;
