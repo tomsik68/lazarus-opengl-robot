@@ -1,0 +1,7 @@
+project1
+project1.lpi.*
+project1.lps.*
+robotunit.*
+*.bak
+lib
+project1.lp*
